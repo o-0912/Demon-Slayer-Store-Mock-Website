@@ -1,3 +1,3 @@
-Demon Slayer Store Mock Website
-  Responsive front-end web layout for a mock Demon Slayer store.
+Mock Anime Store Landing Page
+  Responsive landing page for mock anime store.
   
