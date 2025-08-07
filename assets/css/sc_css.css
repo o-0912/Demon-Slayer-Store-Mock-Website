@@ -67,6 +67,7 @@ video {
   color:transparent;
   text-transform:uppercase;
 }
+
 .welcome_text span:nth-child(1){
   position:absolute;
   top:0; 
@@ -76,9 +77,11 @@ video {
   clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
   overflow:hidden;
 }
+
 .welcome_text:hover span:nth-child(1){
-  transform:translateY(-18px); 
+  transform:translateY(-18px);
 }
+
 .welcome_text span:nth-child(2){
   position:absolute;
   top:0; 
@@ -88,9 +91,11 @@ video {
   clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
   overflow:hidden;
 }
+
 .welcome_text:hover span:nth-child(2){
   transform:translateY(18px); 
 }
+
 .welcome_text span:nth-child(3){
   position:absolute;
   top:50%; 
@@ -129,6 +134,35 @@ video {
   transform:translateY(-50%) scaleY(1);
 }
 
+.shop {
+	position: absolute;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: monospace;
+  font-size: 30px;
+  text-align: center;
+  border: 1px transparent;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  bottom: 0.5%;
+  z-index: 1;
+  animation: floatUpDown 3s ease-in-out infinite alternate;
+}
+
+.arrow {
+	opacity: 0.3;
+	height: 50%;
+	width: 50%;
+	animation: floatUpDown 3s ease-in-out infinite alternate;
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0); /* Start at original position */
+  }
+  100% {
+    transform: translateY(-20px); /* Move 20px upwards */
+  }
+}
 
 .secondary {
 	text-align: center;
@@ -963,4 +997,5 @@ textarea {
 	background-color: #fff;
 	color: red;
 	transform: scale(1.15);
+
 }
